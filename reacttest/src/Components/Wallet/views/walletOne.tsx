@@ -12,7 +12,10 @@ function WalletOne() {
         <div className="WalletOne">
           <div id="Section1">
             <div id="button-holder">
-              <img src="https://www.dropbox.com/s/qnmnwywqi4y7tac/Vector%20%285%29.png?raw=1" />
+              <img
+                src="https://www.dropbox.com/s/qnmnwywqi4y7tac/Vector%20%285%29.png?raw=1"
+                alt="err"
+              />
             </div>
             <input
               type="text"

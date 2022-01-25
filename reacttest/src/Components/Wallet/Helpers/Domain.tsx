@@ -1,10 +1,6 @@
 import React from "react";
 import "../styles/Domain.scss";
-import { useState } from "react";
-import WalletTwo from "../views/walletTwo";
 function Domain(props: any) {
-  const [defiClicked, setDefiClicked] = useState(false);
-
   return (
     <>
       <div className="Domain" onClick={props.onClick}>

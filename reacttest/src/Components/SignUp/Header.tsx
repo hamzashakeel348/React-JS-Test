@@ -21,7 +21,7 @@ const Logo = () => {
           }}
         />
       </div>
-      <span style={{ marginTop: "2vh" }}>
+      <span style={{ marginTop: "3vh" }}>
         <span style={{ color: "#B072FF" }}>Home</span>Page
       </span>
     </div>

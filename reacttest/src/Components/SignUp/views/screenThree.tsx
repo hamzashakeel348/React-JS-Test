@@ -4,7 +4,34 @@ import React from "react";
 import "../styles/screenThree.scss";
 import Header from "../Header";
 import Button from "../Button";
+import { useState } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { bindActionCreators } from "redux";
+// import { actioncreators, State } from "../../../State";
+
 function ScreenThree({ increasePageCount }: any) {
+  const [Name, Setname] = useState("");
+  const [Email, Setemail] = useState("");
+  const [Count, Setcount] = useState(0);
+  // const dispatch = useDispatch();
+  // const SignUp = bindActionCreators(actioncreators, dispatch);
+  // const state = useSelector((state: State) => state.red);
+  const handleInputChange = (e: any) => {
+    Setemail(e.target.value);
+    Setcount(2);
+    if (e.target.value !== "" && Count === 2) {
+      document
+        .getElementsByClassName("button")?.[0]
+        .classList.add("changedInputButton");
+    } else {
+      // remove class
+    }
+  };
+  const HandleNameChange = (e: any) => {
+    Setname(e.target.value);
+    Setcount(1);
+  };
+
   return (
     <>
       <Header data="Create NEAR account" logo={false} button={true} />
@@ -14,31 +41,50 @@ function ScreenThree({ increasePageCount }: any) {
           will be used for all NEAR operations, including sending and receiving
           assets
         </p>
-        <div className="Inner_part">
-          <span className="Input_One">
-            <label>Full Name</label>
-            <input placeholder="Ex. John doe" className="Name_Data" />
-          </span>
-
-          <span className="Input_Two">
-            <label>
-              Account ID{" "}
-              <img
-                src="https://www.dropbox.com/s/gbkmp66utzlq3fp/Vector.png?raw=1"
-                alt="Exclamation Mark"
-              />{" "}
-            </label>
-            <span>
-              <input placeholder="yourname" className="Input_Data" />
-              <div>.near</div>
+        <form>
+          <div className="Inner_part">
+            <span className="Input_One">
+              <label>Full Name</label>
+              <input
+                placeholder="Ex. John doe"
+                className="Name_Data"
+                value={Name}
+                onChange={(e) => {
+                  HandleNameChange(e);
+                }}
+              />
             </span>
-          </span>
-        </div>
-        <Button
-          color="rgb(191,190,194)"
-          data="Continue >"
-          onClick={() => increasePageCount(4)}
-        />
+
+            <span className="Input_Two">
+              <label>
+                Account ID{" "}
+                <img
+                  src="https://www.dropbox.com/s/gbkmp66utzlq3fp/Vector.png?raw=1"
+                  alt="Exclamation Mark"
+                />{" "}
+              </label>
+              <span>
+                <input
+                  placeholder="yourname"
+                  className="Input_Data"
+                  value={Email}
+                  onChange={(e) => {
+                    handleInputChange(e);
+                  }}
+                />
+                <div>.near</div>
+              </span>
+            </span>
+          </div>
+          <Button
+            color="rgb(191,190,194)"
+            data="Continue >"
+            type="submit"
+            onClick={() => increasePageCount(4)}
+            id="ConitnueButton"
+          />
+        </form>
+
         <div style={{ display: "grid" }}>
           <p style={{ fontSize: "12px", color: "#6F6E73" }}>
             by clicking continue you must agree to near labs

@@ -32,7 +32,15 @@
 label {
   margin-bottom: 0.5em;
 }
-
+.ButtonChecked {
+  border: 1px solid #bebec2 !important;
+  border-radius: 10px;
+  color: black;
+  padding: 6px 12px;
+}
+.changedInputButton {
+  background-color: #885fff !important;
+}
 .Name_Data {
   width: 100%;
   height: 45px;
