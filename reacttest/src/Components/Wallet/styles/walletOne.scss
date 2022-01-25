@@ -36,6 +36,9 @@
 .Headings {
   display: flex;
 }
+.Section2 {
+  padding-top: 1em;
+}
 .Section2 > h1,
 .Headings > h1 {
   font-family: "Manrope";
@@ -57,7 +60,7 @@
 .SubHeading > img {
   height: fit-content;
   position: relative;
-  top: 15px;
+  top: 2px;
   left: 15px;
 }
 .First {

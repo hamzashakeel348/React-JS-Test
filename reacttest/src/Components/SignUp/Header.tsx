@@ -30,7 +30,10 @@ const Logo = () => {
 const Button = () => {
   return (
     <>
-      <p style={{ padding: "0" }}>hama</p>
+      <img
+        src="https://www.dropbox.com/s/9pxgmoje5mqfnsx/close.png?raw=1"
+        alt="close"
+      />
     </>
   );
 };

@@ -37,7 +37,7 @@ function ScreenThree({ increasePageCount }: any) {
         <Button
           color="rgb(191,190,194)"
           data="Continue >"
-          onClick={() => increasePageCount(3)}
+          onClick={() => increasePageCount(4)}
         />
         <div style={{ display: "grid" }}>
           <p style={{ fontSize: "12px", color: "#6F6E73" }}>

@@ -3,13 +3,16 @@
   padding: 3em 1em 1em 1em;
 }
 .Main {
-  background-color: violet;
   z-index: -2;
   height: 50px;
+  display: flex;
 }
-.Main > img {
+.MainImage > img {
   margin: 1em;
   border-radius: 10px;
+}
+.MainImage {
+  width: 75%;
 }
 
 .Section_Two {
@@ -54,7 +57,9 @@ h5 {
   margin-left: 0.5em;
   font-family: "Manrope", sans-serif;
 }
-
+.Data {
+  display: grid;
+}
 .Heading {
   font-family: "Manrope", sans-serif;
   font-style: normal;
@@ -76,7 +81,7 @@ h5 {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  padding-top: 0.5em;
+  padding-top: 1em;
   color: #587be0;
 }
 .BottomSection {
@@ -125,4 +130,15 @@ h5 {
 }
 .Details > span > img {
   padding-right: 1em;
+}
+.Inner {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5em;
+}
+.Inner_Share {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #587be0;
 }

@@ -20,16 +20,24 @@ function WalletTwo(props: any) {
   return (
     <>
       <div className="Main" style={{ backgroundColor: props.color }}>
-        <img
-          src="https://www.dropbox.com/s/v5vv3yk44ugqzbe/logo.png?raw=1"
-          alt="MainImage"
-        />
+        <div className="MainImage">
+          <img src={props.source} alt="MainImage" />
+        </div>
+        <div className="Inner">
+          <div>
+            <img
+              src="https://www.dropbox.com/s/tz8kssfqq6okno6/Frame%20%282%29.png?raw=1"
+              alt="share"
+            />
+          </div>
+          <div className="Inner_Share">Share</div>
+        </div>
       </div>
       <div className="WalletTwo">
-        <div className="data">
-          <h2 className="Heading">Docu sign</h2>
-          <h5 className="SwapHeading">sing smart contract seamlessly</h5>
-          <h5 className="ColouredInfo">Utilities</h5>
+        <div className="Data">
+          <h2 className="Heading">{props.Heading}</h2>
+          <h5 className="SwapHeading">{props.SwapHeading}</h5>
+          <h5 className="ColouredInfo">{props.ColouredInfo}</h5>
         </div>
         <div className="Section_Two">
           <button>
