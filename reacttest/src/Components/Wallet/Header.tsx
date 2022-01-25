@@ -24,6 +24,7 @@ function Header() {
         <img
           style={{ height: "27px" }}
           src="https://www.dropbox.com/s/v9efs39kvliax8z/Group%20450.png?raw=1"
+          alt="Dropdown"
         />
         <img
           src="https://www.dropbox.com/s/k2koir403zh1ujz/notification.png?raw=1"
