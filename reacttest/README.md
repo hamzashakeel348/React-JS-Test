@@ -1,10 +1,15 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is purely based on React Js along witht the TypeScript.
+I have used Sass(Scss) for the styling of the Components.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you have to run the following scripts in order to run it:
+
+### `npm install`
+
+It will install all of the required Node Modules.
 
 ### `npm start`
 
@@ -13,11 +18,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,15 +29,65 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Structure of the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+There is a Reacttest folder in the Repo. As when you will clone it you have to run the mentioned scripts inorder to install dependencies and the other stuff.
+In the Src Folder, you will see the two different folders:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Components
+- State
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+###In Components
+You will get another two required Components:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- SignUp
+- Wallet
+
+In SignUp, there are two folder:
+
+- Styles
+- Views
+
+Apart from these there are the three files, named as:
+
+- Button.tsx (it provides the Generic Button for the SignUp Components)
+- Header.tsx (it provides the Generic Header for the all signup views.)
+- SignUp.tsx (it provides the conditional rendering for the SignUp Views)
+
+In Views, there are three different views:
+
+- ScreenOne
+- ScreenTwo
+- ScreenThree
+
+In Styles, there are the stylesheets for each view, Button, and header
+
+In Wallet, you will get the three folders:
+
+- Helper
+- Styles
+- Views
+
+Apart from these there are two files in it:
+
+- Header.tsx (it provides the Generic Header for the all signup views.)
+- Wallet.tsx
+
+In Helper, there are two helper components, which maintains the reusability of the components:
+
+- Domain.tsx
+- Category.tsx
+
+In Views, there are two views:
+
+- WalletOne
+- WalletTwo
+
+In Styles, there are files for styling:
+
+- it includes stylesheets for all of the Views
+
+### `npm install`
 
 ## Learn More
 
