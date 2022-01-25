@@ -87,6 +87,9 @@ In Styles, there are files for styling:
 
 - it includes stylesheets for all of the Views
 
+- By Conditional Rendering, we are switiching the views, in between the Signup and the Wallet.
+- I have made generic views for the Requirements, if you have any ambiguity just ping me.
+
 ### `npm install`
 
 ## Learn More
