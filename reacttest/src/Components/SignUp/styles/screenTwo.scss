@@ -1,0 +1,29 @@
+.screenTwo {
+  // background-color: pink;
+  text-align: center;
+  padding: 2em;
+}
+
+.all_inputs {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  height: 6vh;
+}
+
+.all_inputs > input:focus {
+  border: 2px solid #885fff !important;
+}
+
+.all_inputs > input {
+  outline: none;
+  caret-color: transparent;
+  display: inline-block;
+  width: 28px;
+  height: 3.5vh;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: rgba(243, 243, 243, 0.575);
+  text-align: center;
+}
