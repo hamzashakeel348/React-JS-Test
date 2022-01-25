@@ -3,7 +3,6 @@
 import React from "react";
 import "../styles/screenThree.scss";
 import Header from "../Header";
-import { useState } from "react";
 import Button from "../Button";
 function ScreenThree({ increasePageCount }: any) {
   return (
@@ -24,7 +23,10 @@ function ScreenThree({ increasePageCount }: any) {
           <span className="Input_Two">
             <label>
               Account ID{" "}
-              <img src="https://www.dropbox.com/s/gbkmp66utzlq3fp/Vector.png?raw=1" />{" "}
+              <img
+                src="https://www.dropbox.com/s/gbkmp66utzlq3fp/Vector.png?raw=1"
+                alt="Exclamation Mark"
+              />{" "}
             </label>
             <span>
               <input placeholder="yourname" className="Input_Data" />

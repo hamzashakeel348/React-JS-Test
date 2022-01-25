@@ -21,12 +21,11 @@ function ScreenOne({ increasePageCount }: any) {
   };
 
   const handleInputChange = (e: any) => {
-    if (e.target.value != "") {
+    if (e.target.value !== "") {
       // add class
       document
         .getElementsByClassName("inputData")?.[0]
         .classList.add("changedInput");
-      console.log(document.getElementsByClassName("button"));
       document
         .getElementsByClassName("button")?.[0]
         .classList.add("changedInputButton");

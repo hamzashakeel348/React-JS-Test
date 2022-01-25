@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+.WalletTwo {
+  padding: 3em 1em 1em 1em;
+}
+.Main {
+  background-color: violet;
+  z-index: -2;
+  height: 50px;
+}
+.Main > img {
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.Section_Two {
+  display: flex;
+  padding-top: 2em;
+}
+.Section_Two > button {
+  display: flex;
+  background: #414047;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+.Section_Two > img {
+  height: 16px;
+  width: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+.innersection {
+  display: flex;
+  margin-left: 1em;
+}
+.innersection > img {
+  width: 15px;
+  height: 16px;
+  margin: auto;
+}
+.innersection > p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 0.5em;
+  font-family: "Manrope", sans-serif;
+}
+
+.Heading {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #414047;
+  line-height: 22px;
+}
+.SwapHeading {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6f6e73;
+}
+.ColouredInfo {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 0.5em;
+  color: #587be0;
+}
+.BottomSection {
+  width: 100%;
+}
+.ActiveButton {
+  color: #33373b;
+  background: transparent;
+  border-bottom: 2px solid black !important;
+  border-left: none;
+  padding: 10px 20px;
+  border-right: none;
+  border-top: none;
+  width: 45%;
+}
+.NonactiveButton {
+  color: #6f6e73;
+  border-bottom: 1px solid #dfdfe0;
+  width: 45%;
+  border-left: none;
+  padding: 10px 20px;
+  border-right: none;
+  border-top: none;
+  background: transparent;
+}
+.BottomSection > div {
+  text-align: center;
+}
+.Details {
+  text-align: left !important;
+}
+.Details > h1 {
+  font-size: 16px;
+  font-weight: 600px;
+  font-family: "Manrope", sans-serif;
+}
+.Details > p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Details > span {
+  display: flex;
+  color: #587be0;
+  font-size: 14px;
+}
+.Details > span > img {
+  padding-right: 1em;
+}

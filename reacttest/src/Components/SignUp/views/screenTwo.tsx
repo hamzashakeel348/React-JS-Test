@@ -13,7 +13,7 @@ function ScreenTwo({ increasePageCount }: any) {
       document.getElementById(`input_${num + 1}`)?.focus();
       setCurrentInput(num + 1);
     }
-    if (currentInput == 6) increasePageCount(3);
+    if (currentInput === 6) increasePageCount(3);
   };
 
   const move_focus_to_first = () => {

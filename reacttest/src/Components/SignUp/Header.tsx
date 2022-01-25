@@ -7,10 +7,12 @@ const Logo = () => {
       <div>
         <img
           src="https://www.dropbox.com/s/yegv16w743ea5rq/two.png?raw=1"
+          alt="LogoBackImage"
           style={{ position: "relative", top: "17px", left: "9px" }}
         />
         <img
           src="https://www.dropbox.com/s/8mhoxawwxvzy6m8/one.png?raw=1"
+          alt="LogoFrontImage"
           style={{
             height: "2vh",
             position: "relative",
